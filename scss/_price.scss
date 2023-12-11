@@ -1,0 +1,111 @@
+.price{
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    padding-top: 12vh;
+    padding-bottom: 6vh;
+
+    &-container{
+        width:48%;
+        margin: 0 auto;
+        padding: 2vh 3vw;
+
+        &-title{
+            @include  heading-sub;
+            margin-bottom: 1vh;
+            text-align: center;
+        }
+
+        &-description{
+            line-height: 1.5;
+            color: $font-color;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        &-info{
+            margin: 3vh 2vw;
+            padding: 3vh 3vw;
+            border: 1px solid #ffad23;
+            border-radius: 15px;
+            color: $font-color;
+            background: #fbf8f3;
+
+            p{
+                font-size: 1.5rem;
+                margin-bottom: .5vh;
+            }
+
+            h1{
+                color: #000;
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 3vh;
+
+                span{
+                    font-size: 1.5rem;
+                    margin-bottom: .5vh;
+                    font-weight: normal;
+                    color: $font-color;
+                }
+            }
+
+            hr{
+                color: #cecece;
+            }
+            &-feature{
+                
+                
+                padding: 2vh 0;
+
+                p{
+                    color: $font-color;
+                    //font-size: 1.25rem;
+                    margin-bottom: 2vh;
+                    display:flex;
+                    align-items: start;
+
+                    span{
+                        margin-left:1vw;
+                    }
+                }
+
+                p:last-child{
+                    margin-bottom: .5vh;
+                }
+                
+            }
+
+        }
+
+        &-description-twitter-container{
+            margin-top: 2.5vh;
+            margin-bottom: 2.5vh;
+            //width: 100%;
+
+            &-btn{
+                //width: 100%;
+                background: $twitter-blue ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding:2vh 0;
+                border-radius: 5px;
+            
+                img{
+                    width: 10%;
+                   margin-right: 1vw;
+                }
+                
+                span{
+                    color: #fff;
+                    font-weight: 400;
+                    //letter-spacing: .025vh;
+                    //font-size: 1.25rem;
+                    //width:90%;
+                }
+                
+            }
+        }
+    }
+}

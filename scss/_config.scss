@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+$font-color : #595959;
+$twitter-blue : #1da1f2;
+
+@mixin twitter-btn{
+    //width: 12vw;
+    background: $twitter-blue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2vh;
+    border-radius: 5px;
+    margin-left: 2vw;
+    
+    img{
+        margin-right: .5vw;
+        width: 10%;
+    }
+
+    span{
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: .05vh;
+    }
+}
+
+@mixin heading-sub{
+    font-size: 3rem;
+    margin-bottom: 3vh;
+}
+
+.main-hero-contents-nav-hamburger{
+    display:none;
+}
+
+//this is the hamburger menu
+.hamburger-nav{
+    display:none;
+    height: 0;
+    opacity:0;
+    transition:  all 3s ease-in-out;
+}
+
+.hamburger-nav.active{
+    display:block;
+    opacity:1;
+    height: auto;
+}
+
+.hamburger-nav-container{
+    display: block;
+    width:100%;
+    margin-bottom: 1.2vh;
+}
+
+.hamburger-nav-item{
+    list-style-type: none;
+    border-bottom: 1px solid $font-color;
+    margin-bottom:.25vh;
+
+}
+
+.hamburger-nav-links{
+    color: $font-color;
+    font-size: 1.25rem;
+    background-color:#d7f5f5;
+    width: 100%;
+    display:  block;
+    padding:1vh 0;
+    padding-left:1.5vh;
+}
+
+.hamburger-nav-links:hover{
+    color: $twitter-blue;
+}

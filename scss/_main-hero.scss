@@ -1,0 +1,141 @@
+.main-hero{
+    width: 100%;
+    background: #fbf8f3;
+    padding-top: 2vh;
+    padding-bottom: 6vh;
+
+    &-contents{
+        width: 80%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+
+        &-nav{
+            display: flex;
+            align-items:center;
+            margin-bottom: 4vh;
+
+            &-name{
+                
+
+                a{
+                    color: $twitter-blue;
+                    //font-size:1vw;
+                    font-style: italic;
+                    font-weight: 800;                    
+                }
+
+
+                a:visited{
+                    color: $twitter-blue;
+                }
+            }
+
+            &-lists{
+                //width:30%;
+                margin-left: auto;
+                &-container{
+                    //width:100%;
+                    display: flex;
+                    //justify-content:center;
+                }      
+                
+                &-item{
+                    //width:100%;
+                    list-style-type: none;
+                    margin-left: 3vw;
+                }
+
+                &-link{
+                    color: $font-color;
+                    font-weight: 600;
+                }
+
+                &-link:hover{
+                    color: $twitter-blue;
+                }
+            }
+
+            &-twitter-btn{
+                @include twitter-btn;
+            }
+
+            
+            
+        }
+
+        &-articles{
+            display: flex;
+            width: 100%;
+            
+            &-left{
+                width:65%;
+
+                h1{
+                    font-size: 3.6rem;
+                    margin-bottom: 2vh;
+                    line-height: 1.25;
+                    margin-top: 4vh;
+                }
+
+                p{
+                    color: $font-color;
+                    line-height: 1.5;
+                    margin-bottom: 3vh;
+                    font-size: 1.5rem;
+                }
+
+                &-btn{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin-bottom: 5vh;
+                    margin-left:-2vw;
+
+                    &-twitter{
+                        @include twitter-btn;
+                    }
+
+                    &-learn{
+                        margin-left:1.5vw;
+                        
+                        a{
+                            font-weight: 600;
+                            color: $twitter-blue;
+                        }
+
+                        a:visited{
+                            color: $twitter-blue;
+                        }
+                    }
+                }
+
+                &-user-img{
+                    margin-left: 30px;
+                    margin-bottom: 2vh;
+                    img{
+                        margin-left:-30px;
+                    }
+                }
+
+                .point{
+                    color: $twitter-blue;
+                    font-weight: bold;
+                }
+            }
+
+            &-right{
+                width:45%;
+                margin-left:5vw;
+
+                .desktop{
+                    width: 100%;
+                }
+
+                .tablet{
+                    display: none;
+                }
+            }
+        }
+    }
+}

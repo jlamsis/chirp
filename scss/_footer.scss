@@ -1,0 +1,35 @@
+.footer{
+    width: 100%;
+    background-color: #d7f5f5;
+    padding: 3vh 0;
+
+    &-container{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto; 
+
+        &-name{
+                color: #3180f5;
+                //font-size:1vw;
+                font-style: italic;
+                font-weight: 800;
+
+                a:visited{
+                    color: $twitter-blue;
+                }
+        }
+
+        &-terms{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+
+            a{
+                margin-left:1.5vw;
+                //font-size: 1vw;
+                color: #000;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.features{
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    padding-bottom: 2vh;
+
+    &-container{
+        width: 80%;
+        margin: 0 auto;
+
+        h1{
+            @include heading-sub;
+        }
+
+        &-items{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2vw;
+            row-gap: 5vh;
+
+            &-item{
+                border:1px solid #c4c4c4;
+                border-radius: 5px;
+                padding:2vh  2vw 4vh 2vw;
+                
+
+                img{
+                    margin-bottom: 1.5vh;
+                }
+
+                h3{
+                    margin-bottom: 2.5vh;
+                }
+
+                p{
+                    line-height: 1.5;
+                    color: $font-color;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
